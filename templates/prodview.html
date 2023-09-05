@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+<!-- {% for i in servicedata %} -->
+<h2> hello product page </h2>
+
+<div class="container ">
+    <div class="row">
+    <div class="col-md-3">
+    <div class="row">
+        <img src="/media/{{servicedata.u_image}}"  alt="loading">
+        <h5>{{servicedata.item_name}}</h5>
+        <h5>{{servicedata.item_price}}</h5>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-8" >
+    </div>
+    <div  class="col-md-20" >
+    <button class="btn btn-primary mx-2">buy now</<button>
+    <button class="btn btn-primary mx-2">add to cart</<button>
+    </div>
+</div>
+        
+    </div>
+{% endfor %}
+
+    <div class="col-md-8">
+        <h5>{{i.item_name}}
+        <h5>{{i.item_price}}
+        </div>
+
+
+
+
+
+{% endblock %}
